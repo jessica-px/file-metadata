@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
 
 // Multer - Multipart form handler
 const multer = require('multer');
-const upload = multer({dest: 'uploads/'})
+const upload = multer()
 
 // Get submitted file, return file size
 app.post('/uploads', upload.single('file'), (req, res) => {
@@ -19,5 +19,5 @@ app.post('/uploads', upload.single('file'), (req, res) => {
     res.send(filesize);
 })
 
-
+// Port listener
 app.listen(port);
