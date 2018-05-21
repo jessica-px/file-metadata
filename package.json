@@ -1,0 +1,11 @@
+{
+  "name": "file-metadata",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Jessica Peck <jessypeck@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "multer": "^1.3.0"
+  }
+}
